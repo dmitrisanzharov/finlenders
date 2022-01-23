@@ -293,7 +293,7 @@ Join today and start investing in minutes.
 {/* *****   Sign up with GOOGLE SECTION     ****** */}
 {/* ***************************************************************** */}
 
-<section className="">
+{/* <section className="">
 <div className="container">
 
 <div className="d-flex justify-content-center align-items-center">
@@ -323,9 +323,8 @@ Join today and start investing in minutes.
 
 
 
-{/* end of container */}
 </div>
-</section>
+</section> */}
 
 
 {/* ****************************************************************** */}

@@ -81,10 +81,11 @@ const InvestIntoProject = () => {
 				sessionStorage.finLendersUserDataId
 			);
 
-			sessionStorage.userBalance =
+			sessionStorage.userBalance = parseFloat(
 				fetchUserDataOnExit[0].totalDeposits -
-				fetchUserDataOnExit[0].totalInvestments -
-				fetchUserDataOnExit[0].totalWithdrawals;
+					fetchUserDataOnExit[0].totalInvestments -
+					fetchUserDataOnExit[0].totalWithdrawals
+			).toFixed(2);
 
 			setRedirectBecauseInvestmentIsSuccess(true);
 

@@ -156,7 +156,7 @@ return (
             </div>
 
             <div className="availableBalanceText">
-            €{availableBalance}
+            €{parseFloat(availableBalance).toFixed(2)}
             </div>
 
           </div>

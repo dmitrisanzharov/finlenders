@@ -40,7 +40,7 @@ const fetchUserData = async () => {
     let responds = await request.data;
     setUserDataLoaded(responds[0]); 
 
-    sessionStorage.userBalance = responds[0].totalDeposits - responds[0].totalInvestments - responds[0].totalWithdrawals; 
+    sessionStorage.userBalance = parseFloat(responds[0].totalDeposits - responds[0].totalInvestments - responds[0].totalWithdrawals).toFixed(2);
 
 
 // end of fetchUserData(); 
@@ -175,15 +175,15 @@ Here is your unique reference when making credit transfers: &nbsp;
     <div className="d-flex flex-column w-50">
 
         <div className="totalDepositTextStyle mt-2 text-end">
-        €{userDataLoaded.totalDeposits === 0 ? '0.00' : userDataLoaded.totalDeposits}
+        €{userDataLoaded.totalDeposits === 0 ? '0.00' : parseFloat(userDataLoaded.totalDeposits).toFixed(2)}
         </div>
 
         <div className="totalDepositTextStyle mt-2 text-end">
-        €{userDataLoaded.totalInvestments === 0 ? '0.00' : userDataLoaded.totalInvestments}
+        €{userDataLoaded.totalInvestments === 0 ? '0.00' : parseFloat(userDataLoaded.totalInvestments).toFixed(2)}
         </div>
 
         <div className="totalDepositTextStyle mt-2 text-end">
-        €{(userDataLoaded.totalDeposits - userDataLoaded.totalInvestments) === 0 ? '0.00' : userDataLoaded.totalDeposits - userDataLoaded.totalInvestments}
+        €{(userDataLoaded.totalDeposits - userDataLoaded.totalInvestments) === 0 ? '0.00' : parseFloat(userDataLoaded.totalDeposits - userDataLoaded.totalInvestments).toFixed(2)}
         </div>
 
     </div>

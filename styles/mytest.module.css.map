@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,KAAK,CAAA;EACD,KAAK,EAAE,GAAG;EACV,SAAS,EAAE,IAAI;CAClB;;AAED,AAAA,MAAM,CAAA;EACF,WAAW,EAAE,IAAI;CACpB",
+    "sources": [
+        "mytest.module.scss"
+    ],
+    "names": [],
+    "file": "mytest.module.css"
+}

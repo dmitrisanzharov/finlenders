@@ -1,0 +1,957 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+//********************************************************************
+//          VARIABLES DATA
+// *******************************************************************
+$green-sign-up-button-color: #00d1c1;
+$green-sign-up-button-hover-color: #00c1b3;
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.dr {
+	border: 2px solid red;
+}
+
+.db {
+	border: 2px solid blue;
+}
+
+.dg {
+	border: 2px solid green;
+}
+
+.finlendersLogo {
+	// background: -webkit-linear-gradient(90deg, #003069, #00D0C1);
+	background: linear-gradient(45deg, #003069, #00d0c1);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent;
+	display: inline-block;
+}
+
+.navBarBorder {
+	background: linear-gradient(45deg, #003069, #00d0c1);
+}
+
+.percentageGrayLineOnProjectCard {
+	background-color: #d3d3d3;
+	margin: 0;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+	color: #00d0c0 !important;
+}
+
+.dropdown-item {
+	color: gray !important;
+}
+
+.tempLink:hover {
+	color: inherit !important;
+}
+
+.color-white {
+	color: white !important;
+}
+
+.color-white:hover {
+	color: lightgreen !important;
+}
+
+.miniFooterNavBar:hover {
+	color: #00d1c1 !important;
+}
+
+@media all and (max-width: 991px) {
+	.dropdown-menu {
+		background: #f8f9fa;
+		border: none;
+	}
+}
+
+.marketplaceImageHolder {
+	position: relative;
+	width: 100%;
+	height: 200px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.marketplaceImageHolder {
+		width: 100%;
+		height: 165px;
+	}
+}
+
+@media all and (max-width: 991px) {
+	.marketplaceImageHolder {
+		width: 100%;
+		height: 200px;
+	}
+}
+
+.gradeDiv {
+	width: 100%;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+}
+
+.shadow-dreamy {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+		0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+}
+
+.shadow-dreamy-no-hover {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+		0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+.shadow-dreamy:hover {
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+		0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+		0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+// RIBBONS
+
+.testBox {
+	position: relative;
+	max-width: 600px;
+	width: 90%;
+	height: 400px;
+	background: #fff;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+// FUNDED STANDARD RIBBON
+
+.ribbon {
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 10;
+}
+.ribbon::before {
+	position: absolute;
+	z-index: -1;
+	content: "";
+	display: block;
+	border: 15px solid #002f69;
+	margin-right: 18px;
+	margin-top: 5px;
+	transform: rotate(-135deg);
+}
+.ribbon span {
+	position: absolute;
+	display: block;
+	width: 225px;
+	padding: 5px 0;
+	background-color: #00d1c1;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	color: #fff;
+	font: 500 18px/1 "Lato", sans-serif;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	// text-transform: uppercase;
+}
+
+/* top left*/
+.ribbon-top-left {
+	top: -20px;
+	left: 0px;
+}
+.ribbon-top-left::before,
+.ribbon-top-left::after {
+	border-top-color: transparent;
+	border-left-color: transparent;
+}
+.ribbon-top-left::before {
+	top: 0;
+	right: 0;
+}
+.ribbon-top-left::after {
+	bottom: 0;
+	left: 0;
+}
+.ribbon-top-left span {
+	right: -15px;
+	top: 30px;
+	transform: rotate(-45deg);
+}
+
+// PROJECT GREEN RIBBON
+
+.ribbonProjectGreen {
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 10;
+}
+.ribbonProjectGreen::before {
+	position: absolute;
+	z-index: -1;
+	content: "";
+	display: block;
+	border: 15px solid #005b3a;
+	margin-right: 18px;
+	margin-top: 5px;
+	transform: rotate(-135deg);
+}
+
+.ribbonProjectGreen span {
+	position: absolute;
+	display: block;
+	width: 225px;
+	padding: 5px 0;
+	background-color: #00a76a;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	color: #fff;
+	font: 500 18px/1 "Lato", sans-serif;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	// text-transform: uppercase;
+}
+
+/* top left*/
+.ribbonProjectGreen-top-left {
+	top: -20px;
+	left: 0px;
+}
+.ribbonProjectGreen-top-left::before,
+.ribbonProjectGreen-top-left::after {
+	border-top-color: transparent;
+	border-left-color: transparent;
+}
+.ribbonProjectGreen-top-left::before {
+	top: 0;
+	right: 0;
+}
+.ribbonProjectGreen-top-left::after {
+	bottom: 0;
+	left: 0;
+}
+.ribbonProjectGreen-top-left span {
+	right: -15px;
+	top: 30px;
+	transform: rotate(-45deg);
+}
+
+.ribbonProjectGreenLowerDiv {
+	background: #005b3a;
+	color: white;
+	transform: rotate(-45deg) skew(45deg);
+	position: absolute;
+	bottom: 60px;
+	left: 5px;
+	width: 100px;
+	padding-left: 15px;
+}
+
+.unskewText {
+	transform: skew(-45deg);
+	padding: 2px;
+}
+
+//********************************************************************
+//          SINGLE PROJECT COMPONENT CSS
+// *******************************************************************
+
+.singleProjectHeaderText {
+	max-width: 90%;
+}
+
+@media all and (max-width: 992px) {
+	.singleProjectHeaderText {
+		max-width: 60%;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.singleProjectHeaderText {
+		max-width: 100%;
+		text-align: center;
+	}
+}
+
+.singleProjectImageWrapper {
+	position: relative;
+	width: 665px;
+	height: 384px;
+}
+
+.singleProjectUnderTheImageDiv {
+	width: 665px;
+	height: 135px;
+	background: #002f69;
+	color: white;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.singleProjectProgressBar {
+	position: relative;
+	height: 10px;
+	background: linear-gradient(90deg, #00376d, #008598, #00d0c0);
+}
+
+.singleProjectProgressMarkerAndText {
+	position: absolute;
+	height: 100px;
+	width: 20px;
+}
+
+.singleProjectProgressMarkerRedBox1 {
+	background: #ff0060;
+	position: absolute;
+	right: -20px;
+	width: 40px;
+	height: 23px;
+	top: -42px;
+}
+
+.singleProjectProgressMarkerRedBox2 {
+	position: absolute;
+	right: -20px;
+	top: -20px;
+	width: 0px;
+	height: 0px;
+	border-top: 20px solid #ff0060;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+}
+
+.singleProjectProgressMarketFundedText {
+	position: absolute;
+	right: -20px;
+	top: 15px;
+}
+
+
+@media all and (max-width: 1199px) {
+	.singleProjectImageWrapper {
+		width: 560px;
+		height: 380px;
+	}
+
+	.singleProjectUnderTheImageDiv {
+		width: 560px;
+		height: 134px;
+	}
+
+	// end of max-width 1999px query
+}
+
+@media all and (max-width: 1040px) {
+	.singleProjectImageWrapper {
+		width: 520px;
+		height: 380px;
+	}
+
+	.singleProjectUnderTheImageDiv {
+		width: 520px;
+		height: 134px;
+	}
+
+	// end of max-width 1040px query
+}
+
+
+@media all and (max-width: 991px) {
+	.singleProjectImageWrapper,
+	.singleProjectUnderTheImageDiv {
+		width: 720px;
+	}
+
+	.singleProjectUnderTheImageDiv {
+		width: 720px;
+	}
+}
+
+@media all and (max-width: 767px) {
+	.singleProjectImageWrapper,
+	.singleProjectUnderTheImageDiv {
+		width: 540px;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.singleProjectImageWrapper,
+	.singleProjectUnderTheImageDiv {
+		width: 100vw;
+	}
+
+	.singleProjectUnderTheImageDiv {
+		height: fit-content;
+	}
+}
+
+.fundedOrProjectGreenImageWrapper {
+	position: relative;
+	height: 205px;
+	width: 205px;
+}
+
+.fundedOrProjectGreenImageWrapper2 {
+	position: relative;
+	height: 250px;
+	width: 250px;
+}
+
+.singleProjectLearnMoreButton {
+	border: none;
+	background: #00a76a;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.singleProjectLearnMoreButton:hover {
+	background: #008051;
+}
+
+.singleProjectLearnMoreButton2 {
+	border: none;
+	background: #00d1c1;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.singleProjectLearnMoreButton2:hover {
+	background: #00c5b6;
+}
+
+.progressBarZeroTo576px {
+	background: linear-gradient(90deg, #00376d, #008598, #00d0c0);
+	height: 10px;
+}
+
+// PROGRESS CIRCLES
+
+.progressCircleWrapper {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.progress-circle-spinner {
+	border-radius: 50%;
+	height: 72px;
+	width: 72px;
+	// border: 1px solid red;
+}
+
+.progress-circle-middle-circle {
+	position: absolute;
+	height: 64px;
+	width: 64px;
+	background: #002f69;
+	border-radius: 50%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+// CAMPAIGN INFORMATION IN SINGLE PROJECT DETAILS STYLING
+
+.campaignInformationBlueFont {
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: #002f69;
+}
+
+.campaignInformationBlackFont {
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #212529;
+}
+
+@media all and (min-width: 992px) {
+	.campaignInformationBlueFont {
+		font-size: 18px;
+	}
+	.campaignInformationBlackFont {
+		font-size: 16px;
+	}
+}
+
+.whyInvestWithUsHeadingAndSimilar {
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 25px;
+	color: #212529;
+}
+
+.bulletPointsAndSimilarTextSize {
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: #212529;
+}
+
+.singleProjectDetailsHorizonalLine {
+	width: 650px;
+}
+
+@media all and (max-width: 1200px) {
+	.singleProjectDetailsHorizonalLine {
+		width: 550px;
+	}
+}
+
+@media all and (max-width: 992px) {
+	.singleProjectDetailsHorizonalLine {
+		width: 100%;
+	}
+}
+
+@media all and (min-width: 1400px) {
+	.singleProjectDetailsHorizonalLine {
+		width: 700px;
+	}
+}
+
+//********************************************************************
+//          Map Box for Single Project Details height and width
+// *******************************************************************
+
+.mapBoxForSingleProjectDetailsHeightAndWidth {
+	width: 100%;
+	height: 600px;
+}
+
+@media all and (min-width: 768px) {
+	.mapBoxForSingleProjectDetailsHeightAndWidth {
+		height: 450px;
+	}
+}
+
+//********************************************************************
+//          REGISTRATION PAGE CSS
+// *******************************************************************
+
+// some variables to remember here:
+$form-background-color: rgba(247, 247, 247, 0.8);
+
+.registrationPageWrapper {
+	position: relative;
+}
+
+.registrationPageWrapper::before {
+	content: "";
+	background-image: linear-gradient(
+			115deg,
+			rgba(248, 249, 250, 0.7),
+			rgba(248, 249, 250, 0.7)
+		),
+		url("https://previews.123rf.com/images/dolgachov/dolgachov1905/dolgachov190503189/123906371-group-of-business-people-and-warehouse-workers.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	z-index: -100;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.registerFormHeader {
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 34px;
+	color: #002f69;
+}
+
+.labelInRegistrationForm {
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 19px;
+	color: #777777;
+}
+
+.registrationPageFormBox {
+	// border: 1px solid gray;
+	box-shadow: 0 0 4px 3px lightgray;
+	max-width: 867px;
+	margin: auto;
+	background: rgba(247, 247, 247, 0.8);
+}
+
+.selectType,
+.selectTypeDropDownText {
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #495057;
+}
+
+.selectTypeDropDownText:hover {
+	background: #1e90ff;
+	color: white;
+	cursor: pointer;
+}
+
+.registrationPageWarningText {
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 19px;
+	color: #dc3545;
+}
+
+.registrationPageWarningTextHidden {
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 19px;
+	color: $form-background-color;
+}
+
+.registrationPageWarningTextBlue {
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 19px;
+	color: #1e90ff;
+}
+
+.registrationFormInput {
+	border: 1px solid lightgray;
+	outline: none;
+
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.registrationFormInput:focus {
+	border: 1px solid blue;
+}
+
+.showHideButtonOnInputInRegistration {
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #212529;
+}
+
+.communicationPreferencesText {
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #002f69;
+}
+
+.registrationFormSignUpButton {
+	background: #00d1c1;
+	border-radius: 5px;
+	width: 140px;
+	height: 45px;
+	outline: none;
+	border: none;
+
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	color: #ffffff;
+	transition: 0.5s;
+}
+
+.registrationFormSignUpButton:hover {
+	background: #00c1b3;
+}
+
+.bySubmittingThisFormYouAgreeToTermsText {
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 17px;
+	color: #999999;
+}
+
+.iAlreadyHaveAnAccountText {
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #6c757d;
+	cursor: pointer;
+}
+
+.iAlreadyHaveAnAccountText:hover {
+	color: $green-sign-up-button-color;
+}
+
+.registerPageLoadingSpinner {
+	border: 5px solid lightgray;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border-top-color: $green-sign-up-button-color;
+	border-left-color: $green-sign-up-button-color;
+	animation-name: spin;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+//********************************************************************
+//          FOOTER, footer styling
+// *******************************************************************
+
+.footerLink {
+	color: #0077cb !important;
+}
+
+//********************************************************************
+//          SIGN IN PAGE STYLING (many burrowed from registration page)
+// *******************************************************************
+
+.signInPageWrapper {
+	position: relative;
+}
+
+.signInPageWrapper::before {
+	content: "";
+	background-image: linear-gradient(
+			115deg,
+			rgba(248, 249, 250, 0.7),
+			rgba(248, 249, 250, 0.7)
+		),
+		url("https://static.wikia.nocookie.net/e4596776-e2f4-4e7b-9f32-d9723b22fc8e");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	z-index: -100;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.loginBackButton {
+	background: #e8e8e5;
+	border-radius: 5px;
+	width: 169px;
+	height: 41px;
+	outline: none;
+	border: none;
+
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	color: #616161;
+	transition: 0.5s;
+}
+
+.loginFormLoginButton {
+	background: #00d1c1;
+	border-radius: 5px;
+	width: 169px;
+	height: 41px;
+	outline: none;
+	border: none;
+
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	color: #ffffff;
+	transition: 0.5s;
+}
+
+.loginFormLoginButton:hover {
+	background: #00c1b3;
+}
+
+.loginBackButton:hover {
+	background: #dadada;
+}
+
+@media all and (max-width: 767px) {
+	.loginBackButton,
+	.loginFormLoginButton {
+		width: 100%;
+	}
+}
+
+.signUpLink {
+	color: #616161 !important;
+}
+
+.warningLinkForEmailPleaseRegister {
+	color: #dc3545 !important;
+}
+
+.signinOrSignupWarningText {
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #721c24;
+}
+
+//********************************************************************
+//          USER-SESSION-NAV-BAR
+// *******************************************************************
+
+$availableBalanceTextOnClickColor: #00d1c1;
+
+.availableBalanceText {
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #7c7c7d;
+}
+
+.welcomeToFlendersUserSessionText {
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 38px;
+	color: #002f69;
+}
+
+.totalDepositTextStyle {
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #212529;
+}
+
+.addFundsButtonStyle {
+	background: $green-sign-up-button-color;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.addFundsButtonStyle:hover {
+	background: $green-sign-up-button-hover-color;
+}
+
+.addFundsButtonText {
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	color: #ffffff;
+}
+
+.viewTransactionReportsText {
+	cursor: pointer;
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24x;
+	color: #7c7c7d;
+}
+
+//********************************************************************
+//          General Loading Componentent Styles
+// *******************************************************************
+
+.loadingPleaseWaitPageWrapper {
+	position: relative;
+}
+
+.loadingPleaseWaitPageWrapper::before {
+	content: "";
+	background-image: linear-gradient(
+		115deg,
+		rgba(248, 249, 250, 0.7),
+		rgba(248, 249, 250, 0.7)
+	);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	z-index: -100;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+//********************************************************************
+//          TRANSACTIONS REPORTS PAGE STYLES
+// *******************************************************************
+
+input::-webkit-calendar-picker-indicator {
+	cursor: pointer;
+}

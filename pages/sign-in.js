@@ -433,7 +433,7 @@ const SignIn = () => {
 							{/* start of a div that holds 2 buttons  */}
 							<div className="d-flex flex-column-reverse flex-md-row w-100 align-items-center justify-content-md-around">
 								<button type="button" className="loginBackButton">
-									<Link href="/marketplace">
+									<Link href="/">
 										<a className="signUpLink">Back</a>
 									</Link>
 								</button>

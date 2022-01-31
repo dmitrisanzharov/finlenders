@@ -8,7 +8,7 @@ const MapBoxAddressBox = () => {
     </div>
 
     <div className='pt-2 addressTextToHideAt1000px' style={{fontFamily: 'Lato', fontStyle: 'normal', fontWeight: '400', fontSize: '16px', lineHeight: '22px', color: '#212529'}} >
-    Riverside One, Sir John Rogerson's Quay, Grand Canal Dock, Dublin, D01 DR94
+    Riverside One, Sir John Rogerson&apos;s Quay, Grand Canal Dock, Dublin, D01 DR94
     </div>
 
     <Link href='https://maps.google.com/maps?ll=53.345942,-6.240031&z=15&t=m&hl=en-US&gl=US&mapclient=embed&cid=8277760886599114283'>

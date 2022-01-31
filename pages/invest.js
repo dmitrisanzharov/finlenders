@@ -1,12 +1,19 @@
-import React from 'react'
-import PageUnderConstruction from '../components/PageUnderConstruction'
+import React from "react";
+import PageUnderConstruction from "../components/PageUnderConstruction";
 
 const invest = () => {
-    return (
-        <div>
-            <PageUnderConstruction />
-        </div>
-    )
-}
+	return (
+		<React.Fragment>
+			<section className="investTopImageBackGround">
+				<div className="container">
+					<h1>test</h1>F{/* end of container */}
+				</div>
+			</section>
 
-export default invest
+			{/* end of invest wrapper
+			 */}
+		</React.Fragment>
+	);
+};
+
+export default invest;

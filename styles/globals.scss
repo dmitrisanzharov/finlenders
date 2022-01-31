@@ -1040,4 +1040,25 @@ input::-webkit-calendar-picker-indicator {
   }
 
 
+//********************************************************************
+//          INVEST PAGE
+// *******************************************************************
 
+.investTopImageBackGround::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1000;
+	background-image: linear-gradient(
+		115deg,
+		rgba(58, 58, 158, 0.8),
+		rgba(136, 136, 206, 0.7)
+	  ),
+	  url(https://bornrealist.com/wp-content/uploads/2017/09/business-discussion.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+  }

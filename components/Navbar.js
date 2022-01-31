@@ -20,6 +20,10 @@ const Navbar = () => {
       return false;
     }
 
+    if(window.location.pathname === '/invest'){
+      return false;
+    }
+
     return true;
   }
 
@@ -59,13 +63,13 @@ const Navbar = () => {
 
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
-        {/* <li className="nav-item ms-3 mb-lg-0 mb-2">
+        <li className="nav-item ms-3 mb-lg-0 mb-2">
           <Link href='/invest'>
           <a className="nav-link" 
           onClick={()=> navBarDropdownStyleController('removeStyle')}
           >Invest</a>
           </Link>
-        </li> */}
+        </li>
 
         {/* <li className="nav-item ms-3 mb-lg-0 mb-2" >
         <Link href='/business-loans'>

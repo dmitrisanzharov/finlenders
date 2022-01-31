@@ -47,7 +47,7 @@ const FooterLinksNavBarStyle = () => {
 
 
         <li className='nav-item d-flex justify-content-center align-items-center' style={{width: '127px', height: '18px', borderRight: '1px solid #d3d3d3'}}>
-            <Link href='/'>
+            <Link href='/invest'>
                 <a style={{fontFamily: 'Lato', fontStyle: 'normal', fontSize: '12px', lineHeight: '18px', color: '#999999'}} className='miniFooterNavBar' >Invest</a>
             </Link>
         </li>

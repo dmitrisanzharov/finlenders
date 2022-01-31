@@ -15,6 +15,12 @@ body {
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+
+
+//********************************************************************
+//          Generic styles
+// *******************************************************************
+
 a {
 	color: inherit;
 	text-decoration: none;
@@ -35,6 +41,19 @@ a {
 .dg {
 	border: 2px solid green;
 }
+
+.onHoverUnderlineText:hover{
+	text-decoration: underline;
+}
+
+
+
+
+
+//********************************************************************
+//          start of Finlenders Styling
+// *******************************************************************
+
 
 .finlendersLogo {
 	// background: -webkit-linear-gradient(90deg, #003069, #00D0C1);
@@ -955,3 +974,70 @@ $availableBalanceTextOnClickColor: #00d1c1;
 input::-webkit-calendar-picker-indicator {
 	cursor: pointer;
 }
+
+
+//********************************************************************
+//          CONTACT, CONTACT US STYLES
+// *******************************************************************
+
+.mapBoxAddressBox{
+	position: absolute;
+	top: 10px; 
+	left: 25px;
+	background-color: rgba(255,255,255, 0.9);
+	max-width: 300px;
+	overflow: hidden;
+}
+
+@media all and (max-width: 1200px){
+	.mapBoxAddressBox{
+		width: 220px;
+	}
+}
+
+@media all and (max-width: 1000px){
+	.mapBoxAddressBox{
+		width: 190px;
+	}
+
+	.addressTextToHideAt1000px{
+		display: none;
+	}
+}
+
+@media all and (max-width: 768px){
+	.mapBoxAddressBox{
+		width: 60%;
+	}
+
+	.addressTextToHideAt1000px{
+		display: none;
+	}
+}
+
+.mapBoxAddressBoxLinkText:hover{
+	text-decoration: underline;
+}
+
+.changeLinkColorInContactUsBox:hover{
+	color: #00d0c0 !important; 
+}
+
+// mapbox for contact us
+
+.map_box-container{
+	position: relative;
+	height: 100% !important;
+	min-height: 450px;
+	width: 100% !important;
+}
+
+#myMapContactUs {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+
+

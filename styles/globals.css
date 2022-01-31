@@ -29,6 +29,10 @@ a {
   border: 2px solid green;
 }
 
+.onHoverUnderlineText:hover {
+  text-decoration: underline;
+}
+
 .finlendersLogo {
   background: linear-gradient(45deg, #003069, #00d0c1);
   background-clip: text;
@@ -929,5 +933,60 @@ a {
 
 input::-webkit-calendar-picker-indicator {
   cursor: pointer;
+}
+
+.mapBoxAddressBox {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 300px;
+  overflow: hidden;
+}
+
+@media all and (max-width: 1200px) {
+  .mapBoxAddressBox {
+    width: 220px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .mapBoxAddressBox {
+    width: 190px;
+  }
+  .addressTextToHideAt1000px {
+    display: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .mapBoxAddressBox {
+    width: 60%;
+  }
+  .addressTextToHideAt1000px {
+    display: none;
+  }
+}
+
+.mapBoxAddressBoxLinkText:hover {
+  text-decoration: underline;
+}
+
+.changeLinkColorInContactUsBox:hover {
+  color: #00d0c0 !important;
+}
+
+.map_box-container {
+  position: relative;
+  height: 100% !important;
+  min-height: 450px;
+  width: 100% !important;
+}
+
+#myMapContactUs {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
 /*# sourceMappingURL=globals.css.map */

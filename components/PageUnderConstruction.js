@@ -36,6 +36,14 @@ const PageUnderConstruction = () => {
 								</a>
 							</Link>
                         </li>
+						<li>
+                        {" "}
+							<Link href="/contact">
+								<a className='miniFooterNavBar'>
+									Contact Us <i className="bi bi-link-45deg"></i>
+								</a>
+							</Link>
+                        </li>
 					</ul>
 
 					{/* end of container */}

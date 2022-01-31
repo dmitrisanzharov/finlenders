@@ -781,6 +781,7 @@ const Index = () => {
 										<MapBoxForSingleProjectDetails
 											latitude={filteredData.latitudeLongitudeArray[0]}
 											longitude={filteredData.latitudeLongitudeArray[1]}
+											zoom={10}
 										/>
 									</div>
 								</div>

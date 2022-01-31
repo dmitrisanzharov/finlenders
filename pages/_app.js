@@ -129,6 +129,7 @@ function MyApp({ Component, pageProps }) {
 				></Script>
 
 				<Script src="https://www.google.com/recaptcha/api.js"></Script>
+
 			</AppProvider>
 		</>
 	);

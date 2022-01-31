@@ -15,6 +15,16 @@ const Navbar = () => {
 
 
 
+  function displayNavBarOnPageTrue(){
+    if(window.location.pathname === '/contact'){
+      return false;
+    }
+
+    return true;
+  }
+
+
+
 
   //********************************************************************
 //          useEffects
@@ -147,7 +157,7 @@ const Navbar = () => {
 
   
 </nav>
-    <NavBarBorderBlueGreen height='12' />
+    {displayNavBarOnPageTrue() ? <NavBarBorderBlueGreen height='12' /> : <></>}
 </>
     )
 }

@@ -4,7 +4,7 @@ var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 // component imports
 
 
-const MapBoxForSingleProjectDetails = ({latitude, longitude, zoom}) => {
+const MapBoxForContactUsPage = ({latitude, longitude, zoom}) => {
 
     mapboxgl.accessToken = 'pk.eyJ1IjoiZG1pdHJpc2Fuemhhcm92IiwiYSI6ImNrdWhwbHNlZTBsMmsycG15a21pemE5NXkifQ.PzZuVF6F-pj4XREVQ951-Q';
 
@@ -13,7 +13,7 @@ const MapBoxForSingleProjectDetails = ({latitude, longitude, zoom}) => {
 
     useEffect(()=> {
         var map = new mapboxgl.Map({
-            container: 'myMap',
+            container: 'myMapContactUs',
             style: 'mapbox://styles/mapbox/streets-v11',
             center: [longitude, latitude], // starting position
             zoom: zoom // starting zoom
@@ -25,15 +25,17 @@ const MapBoxForSingleProjectDetails = ({latitude, longitude, zoom}) => {
     
     
         map.addControl(new mapboxgl.NavigationControl());
+
+        map.resize();
       }, [])
 
 
 
     return (
-        <>
-            <div id="myMap" className='mapBoxForSingleProjectDetailsHeightAndWidth'></div>
-        </>
+        <div className='map_box-container'>
+            <div id="myMapContactUs" className=''></div>
+        </div>
     )
 }
 
-export default MapBoxForSingleProjectDetails
+export default MapBoxForContactUsPage
